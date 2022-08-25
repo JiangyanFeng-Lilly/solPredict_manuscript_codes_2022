@@ -1,0 +1,32 @@
+# Copyright (c) Eli Lilly and Company and its affiliates.
+#
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+
+
+
+# Sample configuration file for training pipeline
+path_data:
+  [path to the training data]
+df_name:
+  [name of training dataframe]
+input_fasta:
+  None
+path_embed:
+  [path to the embeddings]
+path_output:
+  [desired path to the output folder]
+
+typ: H6 
+is_split: True
+num_folds: 5 
+params:
+    n_input: [2560]
+    n_output: [1]
+    num_epochs: [500]
+    n_hidden_1: [64, 128, 256] 
+    n_hidden_2: [32, 64, 128] 
+    batch_size: [8, 16, 32] 
+    lr: [0.001, 0.01] 
+
+
